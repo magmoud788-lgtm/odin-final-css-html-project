@@ -216,3 +216,74 @@ a {
     font-weight: 700;
     margin-right: 0;
 }
+
+
+
+/* ==========================================
+   MOBILE BREAKPOINT (For Screens Under 500px)
+   ========================================== */
+@media (max-width: 500px) {
+    
+    /* 1. Global Padding Reset */
+    .mother, .mother-2, .mother-3, .mother-4 {
+        padding: 40px 16px; /* Drastically drops heavy desktop padding so content has room */
+    }
+
+    /* 2. Part 1: Hero Scaling */
+    .big-header {
+        margin-bottom: 40px;
+        width: 100%; /* Uses full width of the tight screen */
+    }
+    
+    .header-of-text {
+        font-size: 32px; /* Shrinks the massive title so it doesn't clip */
+    }
+    
+    .text {
+        font-size: 16px;
+    }
+    
+    .image {
+        height: 180px; /* Scales down the hero image height */
+    }
+
+    /* 3. Part 2: Info Grid Collapse */
+    .header-2 {
+        font-size: 24px;
+        margin-bottom: 32px;
+    }
+    
+    .image-2-holder {
+        gap: 32px; /* Tightens the gap between the 4 cards */
+        width: 100%;
+    }
+
+    /* 4. Part 3: Testimonial Scaling */
+    .text-3 {
+        font-size: 22px; /* Lowers quote size so it doesn't take up the whole screen */
+    }
+    
+    .quote-sayer {
+        font-size: 18px;
+    }
+
+    /* 5. Part 4: Blue Call To Action Box */
+    .header-4-container {
+        width: 100%; /* Forces the blue card to take up full width on mobile */
+        padding: 30px 20px;
+        gap: 24px;
+    }
+
+    .header-4 {
+        font-size: 20px;
+    }
+
+    .text-4 {
+        font-size: 14px;
+    }
+    
+    .click-button {
+        width: 100%; /* Makes the button full-width so it's easy to tap on a phone */
+        text-align: center;
+    }
+}
