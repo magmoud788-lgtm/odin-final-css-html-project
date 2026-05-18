@@ -217,73 +217,63 @@ a {
     margin-right: 0;
 }
 
-
-
-/* ==========================================
-   MOBILE BREAKPOINT (For Screens Under 500px)
-   ========================================== */
-@media (max-width: 500px) {
-    
-    /* 1. Global Padding Reset */
-    .mother, .mother-2, .mother-3, .mother-4 {
-        padding: 40px 16px; /* Drastically drops heavy desktop padding so content has room */
+@media (max-width: 800px) {
+    .main-body {
+        flex-direction: column;
+        gap: 40px;
     }
-
-    /* 2. Part 1: Hero Scaling */
-    .big-header {
-        margin-bottom: 40px;
-        width: 100%; /* Uses full width of the tight screen */
+    .big-text {
+        width: 100%;
+        text-align: center;
     }
-    
-    .header-of-text {
-        font-size: 32px; /* Shrinks the massive title so it doesn't clip */
+    .sign-up {
+        align-self: center;
     }
-    
-    .text {
-        font-size: 16px;
-    }
-    
     .image {
-        height: 180px; /* Scales down the hero image height */
+        width: 80%;
+        height: 240px;
     }
+    .header-4-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 32px;
+    }
+}
 
-    /* 3. Part 2: Info Grid Collapse */
-    .header-2 {
-        font-size: 24px;
-        margin-bottom: 32px;
+/* SMARTPHONE PARADIGM */
+@media (max-width: 500px) {
+    .mother, .mother-2, .mother-3, .mother-4 {
+        padding: 40px 20px;
     }
-    
-    .image-2-holder {
-        gap: 32px; /* Tightens the gap between the 4 cards */
+    .big-header {
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 40px;
         width: 100%;
     }
-
-    /* 4. Part 3: Testimonial Scaling */
+    .header-of-text {
+        font-size: 32px;
+    }
+    .image {
+        width: 100%;
+        height: 200px;
+    }
+    .header-2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
     .text-3 {
-        font-size: 22px; /* Lowers quote size so it doesn't take up the whole screen */
+        font-size: 24px;
     }
-    
-    .quote-sayer {
-        font-size: 18px;
-    }
-
-    /* 5. Part 4: Blue Call To Action Box */
     .header-4-container {
-        width: 100%; /* Forces the blue card to take up full width on mobile */
+        width: 100%;
         padding: 30px 20px;
-        gap: 24px;
     }
-
     .header-4 {
         font-size: 20px;
     }
-
-    .text-4 {
-        font-size: 14px;
-    }
-    
     .click-button {
-        width: 100%; /* Makes the button full-width so it's easy to tap on a phone */
+        width: 100%;
         text-align: center;
     }
 }
